@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+        .content {
+            margin:auto;
+            width: 35%;
+            padding: 10px 0px 100px 100px;
+            border: 3px solid black;
+            align-content: center;
+        }
+        h2 {
+            color: rgb(0, 132, 255);
+            margin: 20px 10px 20px 10px
+            
+            
+        }
+        label {
+            font-weight: bold;
+            margin: 10px 0px 10px 10px;
+        }
+        input {
+            text-align: left;
+            font-size: medium;
+            margin: 10px 10px 10px 10px;
+            padding: 5px 0px 5px 5px;
+            width:70%;
+            align-self: auto;
+        }
+        input[type="submit"]{
+            background-color: burlywood;
+            font-weight: bold;
+            text-align: center;
+            font-size: 15px;
+            position: relative;
+            left: 120px;
+            margin: 10px 10px 10px 0px;
+            width:auto;
+            border-radius: 50%;
+            padding : 10px 10px 10px 10px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form action="secondpage.html">
+            <h2>Registration Form</h2>
+            <label for="Name">Name : </label><br>
+            <input type="text" placeholder="Name" pattern="\w+" required><br>
+            <label for="Contact">Contact Number : </label><br>
+            <input type="tel" placeholder="Contact" pattern="[0-9]{10}" required><br>
+            <label for="City">City : </label><br>
+            <input type="text" placeholder="City" pattern="\w+"><br>
+    
+            <input type="submit" name="Sumbit"><br>
+        </form>
+    </div>
+</body>
+</html>
